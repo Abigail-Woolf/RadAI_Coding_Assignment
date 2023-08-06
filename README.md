@@ -2,7 +2,7 @@
 Build Food Truck API
 
 
-## Description of the problem and solution
+## _Description of the problem and solution_
 In this assignment, I built and api, using FastAPI, that searched a JSON file for different elements of the data. I built a single function to handle the "search by name of applicant," "search by status" and "search by street name." 
 
 To use this API, download the python files and data. Next, install the proper tools by typing `pip install fastapi uvicorn geopy` into the command line. Next, also from the comman line, navigate to the folder with the python files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
@@ -27,9 +27,9 @@ http://127.0.0.1:8000/nearest_coordinates/?latitude=YOUR_LATITUDE&longitude=YOUR
 
 
 ## _Reasoning for technical/architectural decisions_
-I chose to use FastAPI to build this program because it is what is used at RadAI and it has built-in API documentation. This is helpful to track the functionality of the API and I figured I should learn the tools that are required for this position. 
+I chose to use FastAPI to build this program because it is what is used at RadAI and it has built-in API documentation. This is helpful to track the functionality of the API and I figured I should learn the tools that are required for this position. I attempted to make the Dockerfile to contain all of the files for this assignment but I ran into trouble with the `docker build` command. Given more time, I could have resolved this issue, but I decided to move forward due to time constraints. 
 
-## Critique Section
+## _Critique Section_
 
 ### What would you have done differently if you had spent more time on this?\
 
