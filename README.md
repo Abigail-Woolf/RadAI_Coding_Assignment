@@ -26,8 +26,10 @@ To filter by "APPROVED" statuses:
 http://127.0.0.1:8000/nearest_coordinates/?latitude=YOUR_LATITUDE&longitude=YOUR_LONGITUDE
 
 
-## Reasoning for technical/architectural decisions\
+## _Reasoning for technical/architectural decisions_
 I chose to use FastAPI to build this program because it is what is used at RadAI and it has built-in API documentation. This is helpful to track the functionality of the API and I figured I should learn the tools that are required for this position. 
+
+## Critique Section
 
 ### What would you have done differently if you had spent more time on this?\
 
@@ -35,12 +37,12 @@ If I had more time to spend on this assignment, I would have hosted the JSON dat
 
 
 ### What are the trade-offs you might have made?
-### What are the things you left out?\
+### What are the things you left out?
 
 I left out some automated tests that I probably should have included. I know that at Rad AI, software engineers write automated tests in their code to make sure that errors are caught and corrected early. Admittedly, I am not too experienced writing automated tests, and I would have made a greater attempt at this had I been given more time.
 
-### What are the problems with your implementation and how would you solve them if we had to scale the application to a large number of users?\
+### What are the problems with your implementation and how would you solve them if we had to scale the application to a large number of users?
 The main problem with my implementation is that it is all run locally and the data is read directly into the program. In a real setting, there will be exponentially more data to handle and not enough storage on a single machine. Also, without the use of a databse, other users would not be able to access the same data and could therefore not run the API.
 
-### Please indicate the amount of time you spent on the project\
+### Please indicate the amount of time you spent on the project
 I spent about 8-9 hours on this assignment. I will admit that it took me a bit of trial and error before I was finally on the right track, but once I got everything situated and I had a finer understanding of the assignment, my pace picked up. 
