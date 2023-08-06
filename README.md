@@ -5,14 +5,14 @@ Build Food Truck API
 ## Description of the problem and solution
 In this assignment, I built and api, using FastAPI, that searched a JSON file for different elements of the data. I built a single function to handle the "search by name of applicant," "search by status" and "search by street name." 
 
-To use this API, download the python files and data. From the command line, navigate to the folder with these files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
+To use this API, download the python files and data. Next, install the proper tools by typing `pip install fastapi uvicorn geopy` into the command line. Next, also from the comman line, navigate to the folder with the python files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
 
-Go to the URL and search by name of applicant by typing http://127.0.0.1:8000/search/?applicant="Enter a name here"
-To search by applicant status type this into the browser http://127.0.0.1:8000/search/?status="Enter a status here"
-To search by street, type this http://127.0.0.1:8000/search/?address="Enter a street name here."
+Search by name of applicant: http://127.0.0.1:8000/search/?applicant="Enter_name_here"
+Search by applicant status: http://127.0.0.1:8000/search/?status="Enter_status_here"
+Search by street name: http://127.0.0.1:8000/search/?address="Enter_street_name_here"
+
 I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. 
-Here is an example of them being used all at once:
-http://127.0.0.1:8000/search/??applicant="Enter_name_here"&?status="Enter_status"&address="Enter_street_name"
+Here is an example of them being used all at once: http://127.0.0.1:8000/search/??applicant="Enter_name_here"&?status="Enter_status"&address="Enter_street_name"
 
 I built a separate function to handle the location search by latitiude and longitude that returns the 5 nearest food trucks with a status that is APPROVED.
 
