@@ -4,6 +4,7 @@ Build Food Truck API
 
 # Description of the problem and solution
 In this assignment, I built and api, using FastAPI, that searched a JSON file for different elements of the data. I built a single function to handle the "search by name of applicant" and "search by status" and "search by street name." To use this API, download the python files and data and, from the comman line, navigate the the folder with these files and run > load uvicorn main:app --reload
+
 Go to the URL and search by name of applicant by typing http://127.0.0.1:8000/search/?applicant="Enter a name here"
 To search by applicant status type this into the browser http://127.0.0.1:8000/search/?status="Enter a status here"
 To search by street, type this http://127.0.0.1:8000/search/?address="Enter a street name here."
