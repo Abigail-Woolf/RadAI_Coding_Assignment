@@ -8,7 +8,9 @@ In this assignment, I built and api, using FastAPI, that searched a JSON file fo
 To use this API, download the python files and data. Next, install the proper tools by typing `pip install fastapi uvicorn geopy` into the command line. Next, also from the comman line, navigate to the folder with the python files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
 
 Search by name of applicant: http://127.0.0.1:8000/search/?applicant="Enter_name_here"
+
 Search by applicant status: http://127.0.0.1:8000/search/?status="Enter_status_here"
+
 Search by street name: http://127.0.0.1:8000/search/?address="Enter_street_name_here"
 
 I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. 
