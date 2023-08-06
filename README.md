@@ -1,9 +1,11 @@
-## RadAI_Coding_Assignment
+# RadAI_Coding_Assignment
 Build Food Truck API
 
 
-# Description of the problem and solution
-In this assignment, I built and api, using FastAPI, that searched a JSON file for different elements of the data. I built a single function to handle the "search by name of applicant" and "search by status" and "search by street name." To use this API, download the python files and data and, from the comman line, navigate the the folder with these files and run > load uvicorn main:app --reload
+## Description of the problem and solution
+In this assignment, I built and api, using FastAPI, that searched a JSON file for different elements of the data. I built a single function to handle the "search by name of applicant," "search by status" and "search by street name." 
+
+To use this API, download the python files and data. From the command line, navigate to the folder with these files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
 
 Go to the URL and search by name of applicant by typing http://127.0.0.1:8000/search/?applicant="Enter a name here"
 To search by applicant status type this into the browser http://127.0.0.1:8000/search/?status="Enter a status here"
@@ -28,7 +30,7 @@ For the programming languages allowed we would prefer that you use the one that 
 We write automated tests and we would like you to do so as well.
 
 
-# Reasoning for technical/architectural decisions
+## Reasoning for technical/architectural decisions
 
 What would you have done differently if you had spent more time on this?
 What are the trade-offs you might have made?
