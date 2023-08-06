@@ -25,19 +25,22 @@ http://127.0.0.1:8000/nearest_coordinates/?latitude=YOUR_LATITUDE&longitude=YOUR
 To filter by "APPROVED" statuses:
 http://127.0.0.1:8000/nearest_coordinates/?latitude=YOUR_LATITUDE&longitude=YOUR_LONGITUDE
 
-Search by name of applicant. Include optional filter on "Status" field.
-Search by street name. The user should be able to type just part of the address. Example: Searching for "SAN" should return food trucks on "SANSOME ST"
-Given a latitude and longitude, the API should return the 5 nearest food trucks. By default, this should only return food trucks with status "APPROVED", but the user should be able to override this and search for all statuses.
-You can use any external services to help with this (e.g. Google Maps API).
-For the programming languages allowed we would prefer that you use the one that was discussed with the recruiter or the hiring manager. So make sure that this is clear before you start this challenge, please :)
-We write automated tests and we would like you to do so as well.
+
+## Reasoning for technical/architectural decisions\
+I chose to use FastAPI to build this program because it is what is used at RadAI and it has built-in API documentation. This is helpful to track the functionality of the API and I figured I should learn the tools that are required for this position. 
+
+### What would you have done differently if you had spent more time on this?\
+
+If I had more time to spend on this assignment, I would have hosted the JSON data on a database and connected that to the application. This would allow for more compartmentalization of the app program and for future expansion of the data. I think that it is a more practical approach to building APIs, especially when they handle much larger datasets. 
 
 
-## Reasoning for technical/architectural decisions
+### What are the trade-offs you might have made?
+### What are the things you left out?\
 
-What would you have done differently if you had spent more time on this?
-What are the trade-offs you might have made?
-What are the things you left out?
-What are the problems with your implementation and how would you solve them if we had to scale the application to a large number of users?
-Please document any steps necessary to run your solution and your tests.
-Please indicate the amount of time you spent on the project
+I left out some automated tests that I probably should have included. I know that at Rad AI, software engineers write automated tests in their code to make sure that errors are caught and corrected early. Admittedly, I am not too experienced writing automated tests, and I would have made a greater attempt at this had I been given more time.
+
+### What are the problems with your implementation and how would you solve them if we had to scale the application to a large number of users?\
+The main problem with my implementation is that it is all run locally and the data is read directly into the program. In a real setting, there will be exponentially more data to handle and not enough storage on a single machine. Also, without the use of a databse, other users would not be able to access the same data and could therefore not run the API.
+
+### Please indicate the amount of time you spent on the project\
+I spent about 8-9 hours on this assignment. I will admit that it took me a bit of trial and error before I was finally on the right track, but once I got everything situated and I had a finer understanding of the assignment, my pace picked up. 
