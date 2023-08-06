@@ -7,7 +7,7 @@ In this assignment, I built and api, using FastAPI, that searched a JSON file fo
 
 To use this API, download the python files and data. Next, install the proper tools by typing `pip install fastapi uvicorn geopy` into the command line. Next, also from the comman line, navigate to the folder with the python files and run `uvicorn main:app --reload`. This will return the URL that you can copy and paste into a browser to start searching the data.
 
-Search by name of applicant: http://127.0.0.1:8000/search/?applicant="Enter_name_here"
+Search by name of applicant: http://127.0.0.1:8000/search/?applicant="Enter_name_here"\
 
 Search by applicant status: http://127.0.0.1:8000/search/?status="Enter_status_here"
 
