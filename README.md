@@ -27,8 +27,8 @@ For the programming languages allowed we would prefer that you use the one that 
 We write automated tests and we would like you to do so as well.
 
 
-Reasoning behind your technical/architectural decisions
-Critique section:
+# Reasoning for technical/architectural decisions
+
 What would you have done differently if you had spent more time on this?
 What are the trade-offs you might have made?
 What are the things you left out?
