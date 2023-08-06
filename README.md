@@ -13,7 +13,7 @@ Search by applicant status: http://127.0.0.1:8000/search/?status="Enter_status_h
 
 Search by street name: http://127.0.0.1:8000/search/?address="Enter_street_name_here"
 
-I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. 
+I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. \
 Here is an example of them being used all at once: http://127.0.0.1:8000/search/??applicant="Enter_name_here"&?status="Enter_status"&address="Enter_street_name"
 
 I built a separate function to handle the location search by latitiude and longitude that returns the 5 nearest food trucks with a status that is APPROVED.
