@@ -13,7 +13,7 @@ Search by applicant status: http://127.0.0.1:8000/search/?status="Enter_status_h
 
 Search by street name: http://127.0.0.1:8000/search/?address="Enter_street_name_here"
 
-I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. \
+I combined all three of these search options into one function so that they can be used together or separately. By adding an ampersand, you can include all of these parameters into one search, or decide to use them on at a time. 
 
 Here is an example of them being used all at once: http://127.0.0.1:8000/search/??applicant="Enter_name_here"&?status="Enter_status"&address="Enter_street_name"
 
@@ -37,6 +37,8 @@ If I had more time to spend on this assignment, I would have hosted the JSON dat
 
 
 ### What are the trade-offs you might have made?
+I am not sure if I fully understand this question, but a trade off I can think of is using geopy instead of a more robust locational data API like Google Maps. I felt like, for me, it was mmuch sipler to use geopy than go through the steps of retreiving an API key from the Google Maps API.
+
 ### What are the things you left out?
 
 I left out some automated tests that I probably should have included. I know that at Rad AI, software engineers write automated tests in their code to make sure that errors are caught and corrected early. Admittedly, I am not too experienced writing automated tests, and I would have made a greater attempt at this had I been given more time.
