@@ -13,6 +13,11 @@ with open("applicants.json", "r") as f:
 # Instantiate app object
 app = FastAPI()
 
+#Buid the endpoint URL
+@app.get("/")
+def root_URL():
+    return "This is Abby Woolf's RadAI Coding Interview"
+
 #Build get request that searches for applicants by name, street or status of application
 @app.get("/search/")
 def search_applicants(applicant: str = None, street: str = None, status: str = None):
